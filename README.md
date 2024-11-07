@@ -28,30 +28,22 @@ Podman or Docker for containerization
 Installation
 Clone the Repository:
 
-bash
-Copy code
 git clone https://github.com/your-username/inventory-management_Lab8.git
 cd inventory-management_Lab8
 Install Composer Dependencies:
 
-bash
-Copy code
 composer install
 Copy the .env File:
 
-bash
-Copy code
 cp .env.example .env
 Generate Application Key:
 
-bash
-Copy code
 php artisan key:generate
 Configure Database:
 
 Open the .env file and update the following lines with your database credentials:
 env
-Copy code
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -60,13 +52,10 @@ DB_USERNAME=your_database_user
 DB_PASSWORD=your_database_password
 Run Database Migrations:
 
-bash
-Copy code
 php artisan migrate
 Usage
 Run the Application Locally:
-bash
-Copy code
+
 php artisan serve
 Access the Application:
 Open a browser and go to http://localhost:8000.
@@ -79,8 +68,6 @@ Create a Podman Compose File: Use podman-compose.yml to configure both the Larav
 
 Run the Application:
 
-bash
-Copy code
 podman-compose up -d
 Access the Application:
 
